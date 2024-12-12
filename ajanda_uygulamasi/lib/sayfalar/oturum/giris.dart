@@ -99,7 +99,7 @@ class _GirisSayfasiState extends State<GirisSayfasi> {
                       hintText: "Şifrenizi Girin",
                       hintStyle: TextStyle(
                         color: Colors.white,
-                        letterSpacing: 5,//yazdığımız rakamlar arasındaki mesafeyi ayarlar
+                        //letterSpacing: 5,//yazdığımız rakamlar arasındaki mesafeyi ayarlar
                       ),
                       prefixIcon: Icon(
                         Icons.lock_outlined,
