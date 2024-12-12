@@ -8,7 +8,12 @@ class GirisSayfasi extends StatefulWidget {
   State<GirisSayfasi> createState() => _GirisSayfasiState();
 }
 
+
+
 class _GirisSayfasiState extends State<GirisSayfasi> {
+
+  bool sifre_gozukme=false;
+
   @override
   Widget build(BuildContext context) {
     return SafeArea( //uygulamanın ekranlarda taşmasını engeller
@@ -30,8 +35,8 @@ class _GirisSayfasiState extends State<GirisSayfasi> {
                     decoration: BoxDecoration(
                       borderRadius: BorderRadius.circular(100),
                       border: Border.all(
-                        color: const Color(0xFFF2B3C3).withOpacity(0.2),
-                        width: 1,
+                        color: const Color.fromARGB(255, 241, 45, 94).withOpacity(0.2),
+                        width: 3,
                         ),
                     ),
                     child:Container(
@@ -53,9 +58,9 @@ class _GirisSayfasiState extends State<GirisSayfasi> {
                   Container(//uygulama adının yazdığı bölüm
                 margin: EdgeInsets.only(top: 20),
                  child: Text(
-                  "Uygulama Adı",
+                  "PLANDAN",
                  style:TextStyle(
-                  color: Colors.white,
+                  color:renk("a38e9b"),
                   fontSize:30 
                   //fontFamily: fon ailesini yazabiliriz.(login sayfası videosu 34.dkka)
                   ),
@@ -92,23 +97,37 @@ class _GirisSayfasiState extends State<GirisSayfasi> {
                     ),
                     margin: EdgeInsets.only(top: 5,bottom: 30, right: 30,left: 30) ,
                     padding: EdgeInsets.only(left: 15,right: 15,top:5, bottom: 5),
-                    child: TextFormField( //boş bir metin yazma alanı getirir
-                     obscureText: true,//şifreyi yazarken görünmemesini sağlar
-                     decoration: InputDecoration(
-                      border: InputBorder.none,
-                      hintText: "Şifrenizi Girin",
-                      hintStyle: TextStyle(
-                        color: Colors.white,
-                        //letterSpacing: 5,//yazdığımız rakamlar arasındaki mesafeyi ayarlar
-                      ),
-                      prefixIcon: Icon(
-                        Icons.lock_outlined,
-                        color: Colors.white, //iconun rengi
+                    child: Row(
+                      children: [
+                        Expanded(
+                          child: TextFormField( //boş bir metin yazma alanı getirir
+                           obscureText: sifre_gozukme,//şifreyi yazarken görünmemesini sağlar
+                           decoration: InputDecoration(
+                            border: InputBorder.none,
+                            hintText: "Şifrenizi Girin",
+                            hintStyle: TextStyle(
+                              color: Colors.white,
+                              //letterSpacing: 5,//yazdığımız rakamlar arasındaki mesafeyi ayarlar
+                            ),
+                            prefixIcon: Icon(
+                              Icons.lock_outlined,
+                              color: Colors.white, //iconun rengi
+                              ),
+                          ),
+                          style: TextStyle(
+                            color: Colors.white,
+                          ),
+                          ),
                         ),
-                    ),
-                    style: TextStyle(
-                      color: Colors.white,
-                    ),
+                        IconButton(onPressed: (){
+                          setState(() {
+                            sifre_gozukme=!sifre_gozukme;
+                          },);
+                        }, 
+                        icon: Icon(
+                          sifre_gozukme?Icons.remove_red_eye_outlined: Icons.close, 
+                        color: Colors.white,)),
+                      ],
                     ),
                   ),
                   InkWell(// yaptığımız widgete tıklanabilirlik özelliği sağlar.
@@ -123,7 +142,7 @@ class _GirisSayfasiState extends State<GirisSayfasi> {
                       decoration: BoxDecoration(
                         gradient: LinearGradient(colors: [ //buyona geçişli renk verir
                           Colors.white,
-                          Colors.pink,
+                          renk("da7390"),
                         ],
                         begin: Alignment.topRight,
                         end: Alignment.bottomLeft,
@@ -131,7 +150,7 @@ class _GirisSayfasiState extends State<GirisSayfasi> {
                         borderRadius: BorderRadius.circular(20),
                         boxShadow: [
                           BoxShadow( //butondaki gölgenin ayarı
-                            color: Colors.pink,
+                            color: renk("da7390"),
                             offset: Offset(0, 4),
                             blurRadius: 5,
                           ),
