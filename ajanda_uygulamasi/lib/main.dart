@@ -1,4 +1,5 @@
-import 'package:ajanda_uygulamasi/sayfalar/oturum/giris.dart';
+import 'package:ajanda_uygulamasi/sayfalar/ana_sayfa.dart';
+//import 'package:ajanda_uygulamasi/sayfalar/oturum/giris.dart';
 import 'package:flutter/material.dart';
 
 void main(){
@@ -11,12 +12,13 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'Flutter Demo',
+      title: 'PLANDAN',
       debugShowCheckedModeBanner: false,
       theme: ThemeData(
         primarySwatch: Colors.blue,
       ),
-      home: GirisSayfasi(),
+      //home: GirisSayfasi(),
+      home: AnaSayfa(),
     );
   }
 }  

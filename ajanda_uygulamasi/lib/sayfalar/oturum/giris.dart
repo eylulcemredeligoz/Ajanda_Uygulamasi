@@ -1,4 +1,5 @@
 import 'package:ajanda_uygulamasi/sabitler/ext.dart';
+import 'package:ajanda_uygulamasi/sayfalar/ana_sayfa.dart';
 import 'package:flutter/material.dart';
 
 class GirisSayfasi extends StatefulWidget {
@@ -132,7 +133,7 @@ class _GirisSayfasiState extends State<GirisSayfasi> {
                   ),
                   InkWell(// yaptığımız widgete tıklanabilirlik özelliği sağlar.
                   onTap: (){
-                    print("tıklandı");
+                    AnaSayfa();
                   },
                     child: Container(
                        //margin: EdgeInsets.symmetric(horizontal:50 ) ,
