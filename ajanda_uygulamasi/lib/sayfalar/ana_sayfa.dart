@@ -1,4 +1,6 @@
 //import 'package:ajanda_uygulamasi/sabitler/ext.dart';
+import 'package:ajanda_uygulamasi/constants/tasktype.dart';
+import 'package:ajanda_uygulamasi/model/task.dart';
 import 'package:ajanda_uygulamasi/sabitler/todoitem.dart';
 import 'package:ajanda_uygulamasi/sayfalar/add_new_task.dart';
 import 'package:flutter/material.dart';
@@ -10,13 +12,45 @@ class AnaSayfa extends StatefulWidget {
   @override
   State<AnaSayfa> createState() => _AnaSayfaState();
 }
-
-List<String>todo=["Not","Yapılacaklar","Hedefler"];
-List<String> completed=["ödevler","projeler","etkinlikler"];
-
 class _AnaSayfaState extends State<AnaSayfa> {
   bool isChecked=false;
+//List<String>todo=["Not","Yapılacaklar","Hedefler"];
+//List<String> completed=["ödevler","projeler","etkinlikler"];
+ List<Task> todo =[
+  Task(
+    type: Tasktype.akademikHayat, 
+    title:"Not Çıkarma", 
+    description: "Gülcan Hoca Notlarını Çıkar",
+     isCompleted: false),
+      Task(
+    type: Tasktype.ozelHayat, 
+    title:"Banyo Yap", 
+    description: "Saçlarını maşala",
+     isCompleted: false),
+      Task(
+    type: Tasktype.sosyalHayat, 
+    title:"Kızlarla kahve ", 
+    description: "Sudeye hediyesini ver",
+     isCompleted: false),
+ ] ;
 
+  List<Task> completed =[
+    Task(
+    type: Tasktype.ozelHayat, 
+    title:"Banyo Yap", 
+    description: "Saçlarını maşala",
+     isCompleted: false),
+      Task(
+    type: Tasktype.sosyalHayat, 
+    title:"Kızlarla kahve içmeye çık", 
+    description: "Sudeye hediyesini ver",
+     isCompleted: false),
+  ];
+  void addNewTask (Task newTask){
+    setState(() {
+      todo.add(newTask);
+    });
+  }
   @override
   Widget build(BuildContext context) {
     double deviceHeight = MediaQuery.of(context).size.height;
@@ -89,7 +123,7 @@ class _AnaSayfaState extends State<AnaSayfa> {
                     shrinkWrap: true,
                     itemCount: todo.length,
                     itemBuilder: (context,index){
-                      return TodoItem(title: todo[index],);
+                      return TodoItem(task: todo[index],);
                      },
                    )
                  ),
@@ -117,7 +151,7 @@ class _AnaSayfaState extends State<AnaSayfa> {
                     primary: false,
                     itemCount: completed.length,
                     itemBuilder:(context,index){
-                      return TodoItem(title: completed[index]);
+                      return TodoItem(task: todo[index],);
                     },
                     )
                  ),
@@ -126,7 +160,9 @@ class _AnaSayfaState extends State<AnaSayfa> {
              ElevatedButton(
               onPressed: () {
               Navigator.of(context).push(
-                MaterialPageRoute(builder: (context)=>AddNewTask(),)
+                MaterialPageRoute(builder: (context)=>AddNewTask(
+                  addNewTask: (newTask) => addNewTask(newTask),
+                ),)
 
               );
              }, 

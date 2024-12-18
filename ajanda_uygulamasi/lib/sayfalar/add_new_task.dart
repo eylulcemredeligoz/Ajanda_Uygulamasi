@@ -1,8 +1,23 @@
+import 'package:ajanda_uygulamasi/constants/tasktype.dart';
+import 'package:ajanda_uygulamasi/model/task.dart';
 import 'package:ajanda_uygulamasi/sabitler/ext.dart';
 import 'package:flutter/material.dart';
 
-class AddNewTask extends StatelessWidget {
-  const AddNewTask({super.key});
+class AddNewTask extends StatefulWidget {
+  const AddNewTask({super.key,required this.addNewTask});
+  final void Function(Task newTask) addNewTask;
+
+  @override
+  State<AddNewTask> createState() => _AddNewTaskState();
+}
+
+class _AddNewTaskState extends State<AddNewTask> {
+  TextEditingController baslikController =TextEditingController();
+  TextEditingController tarihController =TextEditingController();
+  TextEditingController saatController =TextEditingController();
+  TextEditingController aciklamaController =TextEditingController();
+
+  Tasktype tasktype =Tasktype.akademikHayat;
 
   @override
   Widget build(BuildContext context) {
@@ -48,6 +63,7 @@ class AddNewTask extends StatelessWidget {
               Padding(
                 padding: const EdgeInsets.symmetric(horizontal: 40,),
                 child: TextField(
+                  controller: baslikController,
                   decoration: InputDecoration(
                     filled: true,
                     fillColor: Colors.white
@@ -67,6 +83,9 @@ class AddNewTask extends StatelessWidget {
                           duration: Duration(milliseconds: 300),
                           content: Text("Akademik Hayat Seçildi"))
                       );
+                      setState(() {
+                        tasktype=Tasktype.akademikHayat;
+                      });
                     },
                     child: Image(image: NetworkImage('https://i.pinimg.com/736x/4a/9d/7c/4a9d7c207cda72505eff27d19b2089b8.jpg'),
                     height: 70,
@@ -80,6 +99,9 @@ class AddNewTask extends StatelessWidget {
                           duration: Duration(milliseconds: 300),
                           content: Text("Sosyal Hayat Seçildi"))
                       );
+                      setState(() {
+                        tasktype=Tasktype.sosyalHayat;
+                      });
                     },
                     child: Image(image: NetworkImage('https://i.pinimg.com/736x/58/e9/a5/58e9a53286fd14cdb7a2150f35718959.jpg'),
                     height: 70,
@@ -93,6 +115,9 @@ class AddNewTask extends StatelessWidget {
                           duration: Duration(milliseconds: 300),
                           content: Text("Özel Hayat Seçildi"))
                       );
+                      setState(() {
+                        tasktype=Tasktype.ozelHayat;
+                      });
                     },
                     child: Image(image: NetworkImage('https://i.pinimg.com/736x/b5/e7/be/b5e7be1f91003967178f208e718c03c1.jpg'),
                     height: 70,
@@ -113,7 +138,7 @@ class AddNewTask extends StatelessWidget {
                           Text("Tarih"),
                           Padding(
                             padding: const EdgeInsets.symmetric(horizontal: 20),
-                            child: TextField(
+                            child: TextField(controller: tarihController,
                               decoration: InputDecoration(
                                 filled: true,
                                 fillColor: Colors.white
@@ -130,6 +155,7 @@ class AddNewTask extends StatelessWidget {
                           Padding(
                             padding: const EdgeInsets.symmetric(horizontal: 20),
                             child: TextField(
+                              controller: saatController,
                               decoration: InputDecoration(
                                 filled: true,
                                 fillColor: Colors.white),
@@ -148,6 +174,7 @@ class AddNewTask extends StatelessWidget {
               SizedBox(
                 height: 300,
                 child: TextField(
+                  controller: aciklamaController,
                   expands: true,
                   maxLines: null,
                   decoration: InputDecoration(
@@ -157,7 +184,12 @@ class AddNewTask extends StatelessWidget {
                   ),
                 ),
               ),
-              ElevatedButton(onPressed: (){}, child: Text("Kaydet"))
+              ElevatedButton(onPressed: (){
+                Task newTask =Task(type: tasktype, title: baslikController.text, description: aciklamaController.text, isCompleted: false);
+              widget.addNewTask(newTask);
+              Navigator.pop(context);
+              },
+               child: Text("Kaydet"))
             ],
           ),
         )
