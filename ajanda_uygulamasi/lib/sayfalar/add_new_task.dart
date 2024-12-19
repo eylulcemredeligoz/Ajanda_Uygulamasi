@@ -184,7 +184,12 @@ class _AddNewTaskState extends State<AddNewTask> {
                   ),
                 ),
               ),
-              ElevatedButton(onPressed: (){
+              ElevatedButton(
+                style: ButtonStyle(
+                 backgroundColor: MaterialStateProperty.all<Color>(renk('da7390')), 
+                  foregroundColor: MaterialStateProperty.all<Color>(Colors.white),
+              ),
+                onPressed: (){
                 Task newTask =Task(type: tasktype, title: baslikController.text, description: aciklamaController.text, isCompleted: false);
               widget.addNewTask(newTask);
               Navigator.pop(context);

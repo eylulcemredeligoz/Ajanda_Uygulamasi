@@ -1,5 +1,5 @@
 import 'package:ajanda_uygulamasi/sayfalar/ana_sayfa.dart';
-//import 'package:ajanda_uygulamasi/sayfalar/oturum/giris.dart';
+import 'package:ajanda_uygulamasi/sayfalar/oturum/giris.dart';
 import 'package:flutter/material.dart';
 
 void main(){
@@ -17,8 +17,8 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         primarySwatch: Colors.blue,
       ),
-      //home: GirisSayfasi(),
-      home: AnaSayfa(),
+      home: GirisSayfasi(),
+      //home: AnaSayfa(),
     );
   }
 }  

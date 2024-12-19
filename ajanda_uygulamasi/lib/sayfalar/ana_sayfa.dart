@@ -1,4 +1,4 @@
-//import 'package:ajanda_uygulamasi/sabitler/ext.dart';
+import 'package:ajanda_uygulamasi/sabitler/ext.dart';
 import 'package:ajanda_uygulamasi/constants/tasktype.dart';
 import 'package:ajanda_uygulamasi/model/task.dart';
 import 'package:ajanda_uygulamasi/sabitler/todoitem.dart';
@@ -8,6 +8,7 @@ import 'package:table_calendar/table_calendar.dart';
 
 class AnaSayfa extends StatefulWidget {
   const AnaSayfa({super.key});
+  
 
   @override
   State<AnaSayfa> createState() => _AnaSayfaState();
@@ -158,12 +159,16 @@ class _AnaSayfaState extends State<AnaSayfa> {
                ),
              ),
              ElevatedButton(
+              style: ButtonStyle(
+                 backgroundColor: MaterialStateProperty.all<Color>(renk('da7390')), 
+                  foregroundColor: MaterialStateProperty.all<Color>(Colors.white),
+              ),
               onPressed: () {
               Navigator.of(context).push(
                 MaterialPageRoute(builder: (context)=>AddNewTask(
                   addNewTask: (newTask) => addNewTask(newTask),
-                ),)
-
+                ),
+                )
               );
              }, 
              child: Text("Yeni Metin Oluştur"))

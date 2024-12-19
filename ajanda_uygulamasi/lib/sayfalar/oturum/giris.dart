@@ -133,7 +133,9 @@ class _GirisSayfasiState extends State<GirisSayfasi> {
                   ),
                   InkWell(// yaptığımız widgete tıklanabilirlik özelliği sağlar.
                   onTap: (){
-                    AnaSayfa();
+                    Navigator.of(context).push(
+                      MaterialPageRoute(builder: (context)=>AnaSayfa(),)
+                    );
                   },
                     child: Container(
                        //margin: EdgeInsets.symmetric(horizontal:50 ) ,
