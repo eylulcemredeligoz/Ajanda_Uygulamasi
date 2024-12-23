@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "905089097763",
+    "project_id": "ajandauygulamasi",
+    "storage_bucket": "ajandauygulamasi.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:905089097763:android:217303afd23b5712101196",
+        "android_client_info": {
+          "package_name": "com.example.ajanda_uygulamasi"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBGLBqMwfoa778swDIL4MBsljOgalpWuDE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
