@@ -23,7 +23,7 @@ Kullanıcıların yeni plan eklediği sayfa:
 
 ### Çıkış Yapma Ekranı
 Kullanıcıların çıkış yaptığı ekran:
-![Çıkış Yapma Ekranı](https://github.com/SudeNazKol/Ajanda_Uygulamasi/blob/cb8cdcbc63928171a6cc0c625fe751890f2d2022/Screenshot_1737129165.png)
+![Çıkış Yapma Ekranı](https://github.com/SudeNazKol/Ajanda_Uygulamasi/blob/720834c15a6cbc48d3b6798736467ee7e79367f8/Screenshot_1737129172.png)
 
 ## Tanıtım Videosu
 Projenin tanıtım videosunu izlemek için [[buraya tıklayın](https://youtu.be/gSP3RnQ9Bvo)](#).
