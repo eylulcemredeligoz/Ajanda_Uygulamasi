@@ -6,6 +6,10 @@ Plan'dan, kullanıcıların günlük yaşamlarını organize etmelerine, görevl
 ## Ekip Üyeleri 
 Sude Naz KOL-132230031  
 Eylül Cemre DELİGÖZ-132230023
+
+## Tanıtım Videosu
+Projenin tanıtım videosunu izlemek için [[buraya tıklayın](https://youtu.be/gSP3RnQ9Bvo)](#).
+
 ## Ekran Görüntüleri
 
 ### Giriş ve Kayıt Ekranı
@@ -25,5 +29,4 @@ Kullanıcıların yeni plan eklediği sayfa:
 Kullanıcıların çıkış yaptığı ekran:
 ![Çıkış Yapma Ekranı](https://github.com/SudeNazKol/Ajanda_Uygulamasi/blob/720834c15a6cbc48d3b6798736467ee7e79367f8/Screenshot_1737129172.png)
 
-## Tanıtım Videosu
-Projenin tanıtım videosunu izlemek için [[buraya tıklayın](https://youtu.be/gSP3RnQ9Bvo)](#).
+
