@@ -15,7 +15,7 @@ Kullanıcıların sisteme giriş ve kayıt yaptığı ekran:
 
 ### Anasayfa Ekranı 
 Kullanıcıların takvimi ve planları görüntüleyebildiği ekran:
-![Anasayfa Ekranı](https://github.com/SudeNazKol/Ajanda_Uygulamasi/blob/1c2eac58f75a6e25633e96a6ea60a38aaf9234db/Screenshot_1737129015.png)
+![Anasayfa Ekranı](https://github.com/SudeNazKol/Ajanda_Uygulamasi/blob/9fbe27447e4324be249feb0987e086ece57e77db/Screenshot_1737129155.png)
 
 ### Yeni Plan Ekleme Sayfası
 Kullanıcıların yeni plan eklediği sayfa:
