@@ -10,7 +10,7 @@ Eylül Cemre DELİGÖZ-132230023
 
 ### Giriş ve Kayıt Ekranı
 Kullanıcıların sisteme giriş ve kayıt yaptığı ekran:
-Fotolar
+![Giriş Ekranı](https://github.com/SudeNazKol/Ajanda_Uygulamasi/blob/5860215eb78df3ee155a506f34be99710798297c/Screenshot_1737129003.png)
 
 ### Anasayfa Ekranı 
 Kullanıcıların takvimi ve planları görüntüleyebildiği ekran:
