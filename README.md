@@ -19,11 +19,11 @@ Kullanıcıların takvimi ve planları görüntüleyebildiği ekran:
 
 ### Yeni Plan Ekleme Sayfası
 Kullanıcıların yeni plan eklediği sayfa:
-![Yeni Plan Ekleme Ekranı](https://github.com/SudeNazKol/Ajanda_Uygulamasi/blob/1c2eac58f75a6e25633e96a6ea60a38aaf9234db/Screenshot_1737129015.png)
+![Yeni Plan Ekleme Ekranı](https://github.com/SudeNazKol/Ajanda_Uygulamasi/blob/cb8cdcbc63928171a6cc0c625fe751890f2d2022/Screenshot_1737129165.png)
 
 ### Çıkış Yapma Ekranı
 Kullanıcıların çıkış yaptığı ekran:
-![Çıkış Yapma Ekranı](https://github.com/SudeNazKol/Ajanda_Uygulamasi/blob/1c2eac58f75a6e25633e96a6ea60a38aaf9234db/Screenshot_1737129015.png)
+![Çıkış Yapma Ekranı](https://github.com/SudeNazKol/Ajanda_Uygulamasi/blob/cb8cdcbc63928171a6cc0c625fe751890f2d2022/Screenshot_1737129165.png)
 
 ## Tanıtım Videosu
 Projenin tanıtım videosunu izlemek için [[buraya tıklayın](https://youtu.be/gSP3RnQ9Bvo)](#).
