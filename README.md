@@ -5,7 +5,7 @@
 Plan'dan, kullanıcıların günlük yaşamlarını organize etmelerine, görevlerini takip etmelerine ve zamanlarını verimli bir şekilde yönetmelerine yardımcı olan bir ajanda uygulamasıdır. Bu uygulama, kullanıcıların hedeflerine odaklanmalarını sağlayarak hem kişisel hem de profesyonel hayatlarını daha düzenli bir hale getirmeyi amaçlar.
 ## Ekip Üyeleri 
 Sude Naz KOL-132230031  
-Eylül Cemre DELİGÖZ-
+Eylül Cemre DELİGÖZ-132230023
 ## Ekran Görüntüleri
 
 ### Giriş ve Kayıt Ekranı
