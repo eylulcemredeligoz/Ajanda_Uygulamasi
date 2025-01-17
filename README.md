@@ -11,18 +11,19 @@ Eylül Cemre DELİGÖZ-132230023
 ### Giriş ve Kayıt Ekranı
 Kullanıcıların sisteme giriş ve kayıt yaptığı ekran:
 ![Giriş Ekranı](https://github.com/SudeNazKol/Ajanda_Uygulamasi/blob/5860215eb78df3ee155a506f34be99710798297c/Screenshot_1737129003.png)
+![Kayıt Ekranı](https://github.com/SudeNazKol/Ajanda_Uygulamasi/blob/1c2eac58f75a6e25633e96a6ea60a38aaf9234db/Screenshot_1737129015.png)
 
 ### Anasayfa Ekranı 
 Kullanıcıların takvimi ve planları görüntüleyebildiği ekran:
-fotolar
+![Anasayfa Ekranı](https://github.com/SudeNazKol/Ajanda_Uygulamasi/blob/1c2eac58f75a6e25633e96a6ea60a38aaf9234db/Screenshot_1737129015.png)
 
 ### Yeni Plan Ekleme Sayfası
 Kullanıcıların yeni plan eklediği sayfa:
-fotolar
+![Yeni Plan Ekleme Ekranı](https://github.com/SudeNazKol/Ajanda_Uygulamasi/blob/1c2eac58f75a6e25633e96a6ea60a38aaf9234db/Screenshot_1737129015.png)
 
 ### Çıkış Yapma Ekranı
 Kullanıcıların çıkış yaptığı ekran:
-fotolar
+![Çıkış Yapma Ekranı](https://github.com/SudeNazKol/Ajanda_Uygulamasi/blob/1c2eac58f75a6e25633e96a6ea60a38aaf9234db/Screenshot_1737129015.png)
 
 ## Tanıtım Videosu
 Projenin tanıtım videosunu izlemek için [[buraya tıklayın](https://youtu.be/gSP3RnQ9Bvo)](#).
