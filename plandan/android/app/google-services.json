@@ -1,13 +1,13 @@
 {
   "project_info": {
-    "project_number": "905089097763",
-    "project_id": "ajandauygulamasi",
-    "storage_bucket": "ajandauygulamasi.firebasestorage.app"
+    "project_number": "1047039923575",
+    "project_id": "plandan-a772a",
+    "storage_bucket": "plandan-a772a.firebasestorage.app"
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:905089097763:android:217303afd23b5712101196",
+        "mobilesdk_app_id": "1:1047039923575:android:77c2254992b15c7d1bfd72",
         "android_client_info": {
           "package_name": "com.example.ajanda_uygulamasi"
         }
@@ -15,7 +15,7 @@
       "oauth_client": [],
       "api_key": [
         {
-          "current_key": "AIzaSyBGLBqMwfoa778swDIL4MBsljOgalpWuDE"
+          "current_key": "AIzaSyBnpa8YOAbOt1ggWVU3q2GNCf_m3Kz-TQw"
         }
       ],
       "services": {

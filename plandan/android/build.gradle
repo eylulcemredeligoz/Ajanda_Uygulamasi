@@ -1,0 +1,35 @@
+buildscript {
+    ext.kotlin_version='1.7.10'
+    repositories {
+    google()
+    mavenCentral()
+}
+dependencies {
+  // Import the Firebase BoM
+  classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:$kotlin_version"
+  classpath 'com.google.gms:google-services:4.3.15'
+
+
+  // TODO: Add the dependencies for Firebase products you want to use
+  // When using the BoM, don't specify versions in Firebase dependencies
+  // https://firebase.google.com/docs/android/setup#available-libraries
+}
+}
+allprojects {
+    repositories {
+        google()
+        mavenCentral()
+    }
+}
+
+rootProject.buildDir = "../build"
+subprojects {
+    project.buildDir = "${rootProject.buildDir}/${project.name}"
+}
+subprojects {
+    project.evaluationDependsOn(":app")
+}
+
+tasks.register("clean", Delete) {
+    delete rootProject.buildDir
+}
