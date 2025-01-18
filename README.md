@@ -8,7 +8,7 @@ Sude Naz KOL-132230031
 Eylül Cemre DELİGÖZ-132230023
 
 ## Tanıtım Videosu
-Projenin tanıtım videosunu izlemek için [[buraya tıklayın](https://youtu.be/gSP3RnQ9Bvo)](#).
+Projenin tanıtım videosunu izlemek için [[buraya tıklayın](https://youtu.be/vlb9tMffyS4)](#).
 
 ## Ekran Görüntüleri
 
